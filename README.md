@@ -5,6 +5,6 @@ Prueba Angular 2
 
 # Requisitos
 
-Node
-Angular CLI (recomendado)
-NPM o YARN
+* Node
+* Angular CLI (recomendado)
+* NPM o YARN
