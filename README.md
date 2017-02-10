@@ -3,7 +3,7 @@ Prueba Angular 2
 
 # Pre requisitos
 
-- Node Js
+- Node
 - Angular CLI
 - NPM o Yarn
 
