@@ -1,0 +1,137 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(0deg, #F7F7F7  50%, #A8AFCC  50%) no-repeat;
+  font-family: 'Lato', sans-serif;
+}
+
+.root-component {
+  background-color: #F7F7F7;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+  text-decoration: none;
+  /*overflow: auto;*/
+  outline: 0;
+}
+
+.header-info {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rounded-head {
+  border-radius: 50%;
+  width: 145px;
+}
+
+.nav-menu {
+  height: 100%;
+  background-color: #F7F7F7;
+}
+
+.dev-name {
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-top: 10px;
+  color: #827A89;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.profesion {
+  font-size: 14px;
+  color: #b5b5b5;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.menu-home {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.menu-home li {
+  list-style-type: none;
+  padding: 7px 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.menu-home li a {
+  color: #827A89 ;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.menu-home li:hover {
+  background-color: #A8AFCC;
+  border-left: #827A89 4px solid;
+}
+
+.menu-home li:hover a {
+  color: white;
+}
+
+.root-content {
+  background-color: #E2E2E8;
+  height: 100%;
+  padding: 25px 0;
+}
+
+ul.social li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content-title {
+  text-transform: uppercase;
+  color: #827A89;
+}
+
+.title-shadow {
+  position: absolute;
+  top: -40px;
+  left: -5px;
+  font-size: 92px;
+  color: rgba(181, 181, 181, 0.11);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.content-data {
+  position: relative;
+  color: #827A89;
+  font-weight: 300;
+  font-size: 17px;
+
+  max-height: 450px;
+  overflow: auto;
+}
+
+li.is-active {
+  background-color: #A8AFCC;
+  border-left: #827A89 4px solid;
+}
+
+li.is-active a {
+  color: white;
+}

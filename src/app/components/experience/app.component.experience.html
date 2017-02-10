@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="container">
+    <div class="head-title">
+      <h1 class="content-title">
+        {{title}}
+        <span class="title-shadow">{{title}}</span>
+      </h1>
+    </div>
+    <div class="content-data">
+      <ul>
+        <li *ngFor="let item of (data | async)?.experience;">
+          <div class="service">
+            <h4>
+              <span class="fa fa-code"></span><br />
+              {{ item.title }}
+            </h4>
+            <strong>{{ item.position }}</strong> <br />
+            <span>{{ item.desc }}</span><br />
+            <strong>Time:</strong> {{ item.time }}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

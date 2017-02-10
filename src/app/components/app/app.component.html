@@ -1,0 +1,40 @@
+<div class="container" style="height: 96%; padding-top: 30px;max-width: 1045px;">
+  <div class="root-component">
+    <div class="row" style="display: flex">
+      <div class="four columns">
+        <div class="nav-menu">
+          <div class="header-info container">
+            <a routerLink="/">
+              <img src="https://scontent.fclo1-2.fna.fbcdn.net/v/t1.0-1/p160x160/11188186_10152820607306444_2801337533198747384_n.jpg?oh=0653a71c1773d108d0b0bd5b53250622&oe=5937F5EF"
+                   class="rounded-head" />
+            </a>
+            <span class="dev-name">
+              {{ (data | async)?.title}}
+            </span>
+            <span class="profesion">
+              {{ (data | async)?.desc}}
+            </span>
+            <ul class="social">
+              <li *ngFor="let item of (data | async)?.redes; let i = index">
+                <a href="{{item.url}}" target="_blank">
+                  <span class="{{item.icon}}"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="menu-home">
+            <li *ngFor="let item of menu; let i = index" routerLink="/{{item.link}}" routerLinkActive="is-active">
+              <a routerLink="/{{item.link}}">{{item.title}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="eight columns" style="width: 70%;">
+        <div class="root-content">
+          <!--DONDE VAN LAS RUTAS-->
+          <router-outlet [@routerTransition]=""></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

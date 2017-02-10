@@ -1,0 +1,14 @@
+<div class="content">
+  <div class="container">
+    <div class="head-title">
+      <h1 class="content-title">
+        {{title}}
+        <span class="title-shadow">{{title}}</span>
+      </h1>
+    </div>
+    <div class="content-data">
+      {{ (data | async)?.about}}
+    </div>
+  </div>
+</div>
+
